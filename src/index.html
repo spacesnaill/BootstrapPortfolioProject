@@ -8,43 +8,119 @@
   <title>HTML Portfolio</title>
 </head>
 <body>
-
-  <!--
-    Previous project placeholder begins
-  -->
-  <div class="header">
-    <h1>Morgan McCircuit</h1>
-    <h2>I write code</h2>
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-collapse-menu">
+            <span class="sr-only">Toggle Navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Patrick Geiger</a>
+        </div>
+        <div class="collapse navbar-collapse" id="portfolio-collapse-menu">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div id="portfolio-carousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#portfolio-carousel" data-slide-to="1"></li>
+        <li data-target="#portfolio-carousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Software Engineer</h1>
+            <p>Building software is a passion of mine. Whether it be something as simple as a calculator app, or as complicated as a video game, the process of idea to implementation fascinates me.</p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Programmer</h1>
+            <p>I have the most practice with Java but I've tried out numerous programming languages and plan to try out many more in the future. I'm always interested in learning something new and solving problems!</p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Lifelong Student</h1>
+            <p>In this field, you have to keep learning or be left behind. Therefore I think of myself as a Lifelong Student, always learning new technologies and ideas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <a class="left carousel-control" href="#portfolio-carousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#portfolio-carousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+  <section>
+    <div class="marketing">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="glyphicon glyphicon glyphicon-info-sign"></span>
+            <h2>Java</h2>
+            <p>
+              Java is my strongest programming language and I've created numerous projects with it over my college career.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <span class="glyphicon glyphicon glyphicon-info-sign"></span>
+            <h2>AWS</h2>
+            <p>
+              Cloud Computing is extremely powerful and here to stay, and AWS is one of its strongest providers. Therefore I've been working on getting AWS Certified!
+            </p>
+          </div>
+          <div class="col-md-4">
+            <span class="glyphicon glyphicon glyphicon-info-sign"></span>
+            <h2>Front End Development</h2>
+            <p>
+              Web Development is a deep interest of mine, and I enjoy making a great user experience on the Front End with HTML, CSS, and Javascript, among other technologies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<footer>
+  <div class="container">
+    <h3>Contact Me:</h3>
+    <p>
+      You can contact me directly through my email: <a href="mailto:patrickjgeiger@gmail.com">patrickjgeiger@gmail.com</a>
+    </p>
+    <p>
+      You can also contact me through <a href="https://www.linkedin.com/in/patrick-geiger-714a12136/">LinkedIn</a>
+    </p>
   </div>
-
-  <div class="tagline">
-    <h3>Who I am</h3>
-    <p>Hi, my name is Morgan and I love to write code that is efficient.</p>
-  </div>
-
-
-  <div class="skills">
-    <h3>What I do</h3>
-    <p>Here are some of the languages I use on a day-to-day.</p>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ul>
-  </div>
-
-  <div class="contact">
-    <h3>Get in touch</h3>
-    <p>I live in the cloud and can't be seen. Send messages to the good people at <a target="_blank" href="https://twitter.com/codeschool">Code School</a> and they'll notify me.</p>
-  </div>
-  <!--
-    Previous project placeholder ends
-    (unused pieces will be deleted at the last task)
-  -->
+</footer>
+<!--
+  Previous project placeholder ends
+  (unused pieces will be deleted at the last task)
+-->
 
 
-  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
 </html>
